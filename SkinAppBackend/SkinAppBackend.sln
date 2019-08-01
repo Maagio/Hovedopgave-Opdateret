@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SkinAppBackend", "SkinAppBackend\SkinAppBackend.csproj", "{D0202812-2BFA-4CAD-9BA5-215477E31D25}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTestProject1", "XUnitTestProject1\XUnitTestProject1.csproj", "{52BBC490-755D-4CE9-97AA-E610DA830587}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D0202812-2BFA-4CAD-9BA5-215477E31D25} = {D0202812-2BFA-4CAD-9BA5-215477E31D25}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0202812-2BFA-4CAD-9BA5-215477E31D25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0202812-2BFA-4CAD-9BA5-215477E31D25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0202812-2BFA-4CAD-9BA5-215477E31D25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0202812-2BFA-4CAD-9BA5-215477E31D25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52BBC490-755D-4CE9-97AA-E610DA830587}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52BBC490-755D-4CE9-97AA-E610DA830587}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52BBC490-755D-4CE9-97AA-E610DA830587}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52BBC490-755D-4CE9-97AA-E610DA830587}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00C3F6E3-029C-4B8B-B28D-9E6785C3AD74}
+	EndGlobalSection
+EndGlobal
