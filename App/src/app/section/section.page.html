@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <!--<ion-title>Section</ion-title>-->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <div align="right">
+        <ion-button (click)="DeleteSection()">Slet sektion</ion-button>
+    </div>
+  <div align="center">
+    <p>Sektion navn: {{section?.name}}</p>
+    <p>Oprettet på: {{section?.sectionCreationDate | date: "dd MMMM yyyy" : "" :"da"}}</p>
+      <br/>
+      <br/>
+      <!--<ion-img src="data:image/jpeg;base64,{{images[0]?.imageString}}"></ion-img>-->
+      <div class="row" *ngFor="let image of images; let i =index">
+            <img src="data:image/png;base64,{{image?.imageString}}" height="240" width="460">
+            <br/>
+            <ion-checkbox (click)="AddToArray($event, image.pictureId)"></ion-checkbox>
+            <p>Taget den: {{image?.pictureTakenDate | date: "dd MMMM yyyy" : "" :"da"}}</p>
+            <br/>
+            <ion-button (click)="DeleteImage(image.pictureId)">Slet billede</ion-button>
+      </div>
+      <br/>
+      <br/>
+      <ion-input type="file" accept="image/*" (change)="OnFileSelected($event)"></ion-input>
+      <ion-button (click)="UploadImage()">Upload billede</ion-button>
+      <br/>
+      <br/>
+      <ion-button (click)="ComparePictures()">Sammenlign billeder</ion-button>
+      <br/>
+      <br/>
+      <ion-button (click)="GoBack()">Gå tilbage</ion-button>
+  </div>
+</ion-content>
